@@ -10,7 +10,6 @@ from langgraph.graph import StateGraph, END
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_community.tools.tavily_search import TavilySearchResults
 from utils.constants import MODEL_ID
-from agents.wesearch_agent.web_search_agent import web_agent
 
 # Load environment variables
 load_dotenv()
@@ -114,7 +113,7 @@ executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
 class GraphState(TypedDict):
     input: str
     output: str
-    search_results: any
+    # search_results: any
 
 workflow = StateGraph(GraphState)
 
@@ -124,13 +123,13 @@ def call_agent(state):
     result = executor.invoke({"input": state["input"]})
     return {"output": result.get("output", str(result))}
 
-def web_search(state):
-    print(f"\n🔍 Web Search: {state['input']}\n")
-    results = web_agent.invoke({"input":state["input"]})
-    return {"search_results": results["output"]}
+# def web_search(state):
+#     print(f"\n🔍 Web Search: {state['input']}\n")
+#     results = web_agent.invoke({"input":state["input"]})
+#     return {"search_results": results["output"]}
 workflow.add_node("agent", call_agent)
 # workflow.add_node("web_search", web_search)
 workflow.set_entry_point("agent")
 # workflow.add_edge("agent", "web_search")
 # workflow.add_edge("web_search", END)
-job_agent = workflow.compile()
+web_agent = workflow.compile()

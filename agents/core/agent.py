@@ -1,4 +1,5 @@
-from agents.job.job_search_agent import job_agent
+import json
+from agents.job.job_search_agent import web_agent
 from agents.feature.feature_agent import feature_agent
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langgraph.graph import StateGraph, END, START
@@ -25,86 +26,39 @@ class AgentState(TypedDict):
 # Define dummy tools (replace with actual implementations)
 def feature_tool(query: str) -> Dict[str, List[str]]:
     result = feature_agent(query)
-    return {"results": [f"Found product/feature related to query - '{result}'"]}
+    return {"feature_tool": f"'{result}'"}
 
-def job_tool(query: str) -> Dict[str, str]:
-    result = job_agent.invoke({"input": query})
-    return {"results": f"Answer from Job search - '{result['output']}'.", "search_results": result["search_results"]}
-
-def profile_update_tool(user_id: str, updates: Dict[str, Any]) -> Dict[str, bool]:
-    return {"results": True}
-
-# --- Intent Extraction using a Language Model ---
-def create_intent_classifier(llm: BaseChatModel):
-    prompt = ChatPromptTemplate.from_messages([
-        ("system", '''
-        You are an intelligent assistant designed to classify user queries based on their intent. Always respond with only one of the following intents:
-
-            1. feature: When the user is exploring features, offerings or general questions or seeks help on common topics (e.g., how-to, what is, where to find, troubleshooting).
-            2. job: When the user asks related to jobs, events, or programs.
-            3. profile_update: When the user wants to change or manage their personal profile information(ex: skill, experience, location etc.) or expresses interest in registering, creating an account, or signing up.
-            4. unknown: When the user asks a question that does not fit into any of the above categories.
-
-            Carefully analyze the user's query and return the most suitable intent as a single lowercase string (e.g., job).
-        '''),
-        # ("human", "{user_query}"),
-    ])
-    output_parser = StrOutputParser()
-    chain = prompt | llm | output_parser
-
-    def extract_intent(state: AgentState) -> Dict[str, str]:
-        try:
-            user_query = state["user_query"]
-            history = state.get("chat_history", [])
-            # Reconstruct messages from history
-            message_chain = [
-                prompt.append(HumanMessage(content=msg["content"])) if msg["role"] == "human"
-                else prompt.append(AIMessage(content=msg["content"]))
-                for msg in history
-            ]
-            # Add current user query at the end
-            prompt.append(HumanMessage(content=user_query))
-            # print(f"Message Chain: {prompt.format_messages(user_query=message_chain)}")
-            # Now use the full list of messages
-            formatted_messages = prompt.format()
-            llm_response = llm.invoke(formatted_messages)
-            intent = output_parser.invoke(llm_response)
-            # intent = chain.invoke({"user_query":message_chain}).content.strip().lower()
-
-            # intent = chain.invoke({"user_query": state["user_query"]}).strip().lower()
-
-            if intent in ["feature", "job", "profile_update", "unknown"]:
-                return {"intent": intent}
-            else:
-                return {"intent": "unknown"}
-        except Exception as e:
-            print(f"Error classifying intent: {e}")
-            return {"intent": "unknown"}
-
-    return extract_intent
-# --- End of Intent Extraction ---
+def web_tool(query: str) -> Dict[str, str]:
+    result = web_agent.invoke({"input": query})
+    return {"web_search": f"'{result['output']}'." }#, "search_results": result["search_results"]}
 
 # Assume you have an instance of a Langchain Chat Model (e.g., ChatOpenAI)
 # Replace with your actual LLM setup
 llm = ChatGoogleGenerativeAI(model=model_id, temperature=0.0)
 
-extract_intent = create_intent_classifier(llm)
+# extract_intent = create_intent_classifier(llm)
 
 # Define other nodes
 def feature(state: AgentState) -> Dict[str, Dict]:
     result = feature_tool(state["user_query"])
-    return {"tool_results": result}
+    # Ensure tool_results is initialized
+    if "tool_results" not in state or state["tool_results"] is None:
+        state["tool_results"] = {}
 
-def job(state: AgentState) -> Dict[str, Dict]:
-    result = job_tool(state["user_query"])
-    return {"tool_results": result}
+    # Merge/accumulate results
+    state["tool_results"].update(result)
 
-def profile_update(state: AgentState) -> Dict[str, Dict]:
-    result = profile_update_tool("user123", {"update_info": state["user_query"]})
-    return {"tool_results": result}
+    return state
+    # return {"tool_results": result}
 
-def unknown_query(state: AgentState) -> Dict[str, Dict]:
-    return {"tool_results": "Please ask questions related to career or jobs"}
+def web(state: AgentState) -> Dict[str, Dict]:
+    result = web_tool(state["user_query"])
+    if "tool_results" not in state or state["tool_results"] is None:
+        state["tool_results"] = {}
+
+    # Merge/accumulate results
+    state["tool_results"].update(result)
+    return state
 
 def generate_response(state: AgentState) -> Dict[str, str]:
     prompt = ChatPromptTemplate.from_messages([
@@ -123,13 +77,21 @@ def generate_response(state: AgentState) -> Dict[str, str]:
 ("user", 
  "User question: {user_query}\n\n"
  "Tools output:\n{tools_output}\n\n"
-#  "Additional information:\n{additional_info}\n"
  )
  ])
-    info = state["tool_results"]["search_results"] 
+    tool_results = state.get("tool_results") or {}
+
+    if tool_results:
+        tool_results_str = "\n\n".join(
+            f"[{tool}]\n{json.dumps(result, indent=2)}"
+            for tool, result in tool_results.items()
+        )
+    else:
+        tool_results_str = "No tool results available."
+
     formated_prompt = prompt.format_messages(
         user_query=state["user_query"],
-        tools_output=state.get("tool_results", {}).get("results", ""),
+        tools_output=tool_results_str,
         # additional_info=info
     )
     llm_response = llm.invoke(formated_prompt)
@@ -139,53 +101,35 @@ def generate_response(state: AgentState) -> Dict[str, str]:
 workflow = StateGraph(AgentState)
 
 # Add nodes for each stage
-workflow.add_node("extract_intent", extract_intent)
 workflow.add_node("feature", feature)
-workflow.add_node("job", job)
-workflow.add_node("profile_update", profile_update)
-workflow.add_node("unknown", unknown_query)
+workflow.add_node("web", web)
 workflow.add_node("generate_response", generate_response)
-
-# Define routing logic based on classified intent
-def condition(state: AgentState):
-    intent = state.get("intent", "").strip().lower()
-    valid_intents = ["feature", "job", "profile_update", "unknown"]
-    if intent in valid_intents:
-        return intent
-    return "unknown"
 
 
 # Wire up the edges of the graph
-workflow.add_edge(START, "extract_intent")
-workflow.add_conditional_edges("extract_intent", condition)
-workflow.add_edge("feature", "generate_response")
-workflow.add_edge("job", "generate_response")
-workflow.add_edge("profile_update", "generate_response")
-workflow.add_edge("unknown", "generate_response")
+workflow.add_edge(START, "feature")
+workflow.add_edge("feature", "web")
+workflow.add_edge("web", "generate_response")
 workflow.add_edge("generate_response", END)
 
 # Compile the workflow
 core_agent = workflow.compile()
 
-
-# Example usage
-# inputs = {"user_query": "Tell me about the latest community events"}
-# chat_history = [
-#     {"role": "human", "content": "Hi there"},
-#     {"role": "ai", "content": "Hello! How can I help you?"},
-#     {"role": "human", "content": "Tell me about available jobs"},
-#     {"role": "ai", "content": "We have job openings in software and data science."}
-# ]
-# new_query = "Can you check java job openings?"
-
-# inputs = {
-#     "user_query": new_query,
-#     "chat_history": chat_history,
-#     "tool_results": {},  # optional but safe to include
-#     "intent": "",        # will be set by extract_intent
-#     "response": "",      # will be set by generate_response
-# }
-# for output in core_agent.astream(inputs):
-#     for key, value in output.items():
-#         print(f"Node '{key}':")
-#         print(value)
+if __name__ == "__main__":
+    # Example usage
+    inputs = {
+        "user_query": "Tell me about the latest community events",
+        "chat_history": [
+            {"role": "human", "content": "Hi there"},
+            {"role": "ai", "content": "Hello! How can I help you?"},
+            {"role": "human", "content": "Tell me about available jobs"},
+            {"role": "ai", "content": "We have job openings in software and data science."}
+        ],
+        "tool_results": {},  # optional but safe to include
+        "intent": "",        # will be set by extract_intent
+        "response": "",      # will be set by generate_response
+    }
+    for output in core_agent.astream(inputs):
+        for key, value in output.items():
+            print(f"Node '{key}':")
+            print(value)
