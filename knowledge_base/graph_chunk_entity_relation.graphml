@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="Herkey">
+  <data key="d0">Herkey</data>
+  <data key="d1">organization</data>
+  <data key="d2">Herkey is a platform or service that provides job listings data, but does not explicitly provide a job openings list.</data>
+  <data key="d3">chunk-6f05ecbecfa5885e224563f687865dbc</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Linkedin Jobs">
+  <data key="d0">Linkedin Jobs</data>
+  <data key="d1">organization</data>
+  <data key="d2">LinkedIn Jobs is a platform providing job listings data.</data>
+  <data key="d3">chunk-6f05ecbecfa5885e224563f687865dbc</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Naukri Jobs">
+  <data key="d0">Naukri Jobs</data>
+  <data key="d1">organization</data>
+  <data key="d2">Naukri Jobs is a platform providing job listings data.</data>
+  <data key="d3">chunk-6f05ecbecfa5885e224563f687865dbc</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Kaggle">
+  <data key="d0">Kaggle</data>
+  <data key="d1">organization</data>
+  <data key="d2">Kaggle is a platform providing data and resources for machine learning and data science.</data>
+  <data key="d3">chunk-6f05ecbecfa5885e224563f687865dbc</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="data.gov.in">
+  <data key="d0">data.gov.in</data>
+  <data key="d1">organization</data>
+  <data key="d2">data.gov.in is a platform providing government data.</data>
+  <data key="d3">chunk-6f05ecbecfa5885e224563f687865dbc</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="women in tech">
+  <data key="d0">women in tech</data>
+  <data key="d1">organization</data>
+  <data key="d2">women in tech is a platform focused on women in technology.</data>
+  <data key="d3">chunk-6f05ecbecfa5885e224563f687865dbc</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="women who code">
+  <data key="d0">women who code</data>
+  <data key="d1">organization</data>
+  <data key="d2">women who code is a platform focused on women in coding.</data>
+  <data key="d3">chunk-6f05ecbecfa5885e224563f687865dbc</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="vercel.com">
+  <data key="d0">vercel.com</data>
+  <data key="d1">organization</data>
+  <data key="d2">Vercel is a cloud platform for deploying web applications.</data>
+  <data key="d3">chunk-6f05ecbecfa5885e224563f687865dbc</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="github">
+  <data key="d0">github</data>
+  <data key="d1">organization</data>
+  <data key="d2">GitHub is a platform for version control and hosting code repositories.</data>
+  <data key="d3">chunk-6f05ecbecfa5885e224563f687865dbc</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="AWS">
+  <data key="d0">AWS</data>
+  <data key="d1">organization</data>
+  <data key="d2">Amazon Web Services (AWS) is a cloud computing platform.</data>
+  <data key="d3">chunk-6f05ecbecfa5885e224563f687865dbc</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Azure">
+  <data key="d0">Azure</data>
+  <data key="d1">organization</data>
+  <data key="d2">Microsoft Azure is a cloud computing platform.</data>
+  <data key="d3">chunk-6f05ecbecfa5885e224563f687865dbc</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="GCP">
+  <data key="d0">GCP</data>
+  <data key="d1">organization</data>
+  <data key="d2">Google Cloud Platform (GCP) is a cloud computing platform.</data>
+  <data key="d3">chunk-6f05ecbecfa5885e224563f687865dbc</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="FastAPI">
+  <data key="d0">FastAPI</data>
+  <data key="d1">category</data>
+  <data key="d2">FastAPI is a Python web framework for building APIs.</data>
+  <data key="d3">chunk-6f05ecbecfa5885e224563f687865dbc</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Django">
+  <data key="d0">Django</data>
+  <data key="d1">category</data>
+  <data key="d2">Django is a Python web framework for building web applications.</data>
+  <data key="d3">chunk-6f05ecbecfa5885e224563f687865dbc</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Flask">
+  <data key="d0">Flask</data>
+  <data key="d1">category</data>
+  <data key="d2">Flask is a Python web framework for building web applications.</data>
+  <data key="d3">chunk-6f05ecbecfa5885e224563f687865dbc</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Pytorch">
+  <data key="d0">Pytorch</data>
+  <data key="d1">category</data>
+  <data key="d2">PyTorch is a Python machine learning library.</data>
+  <data key="d3">chunk-6f05ecbecfa5885e224563f687865dbc</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Tensorflow">
+  <data key="d0">Tensorflow</data>
+  <data key="d1">category</data>
+  <data key="d2">TensorFlow is a Python machine learning library.</data>
+  <data key="d3">chunk-6f05ecbecfa5885e224563f687865dbc</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="LinkedIn Jobs">
+  <data key="d0">LinkedIn Jobs</data>
+  <data key="d1">organization</data>
+  <data key="d2">LinkedIn Jobs is a platform that provides job listings data, specifically focused on professional networking and job opportunities within the LinkedIn community.</data>
+  <data key="d3">chunk-6f05ecbecfa5885e224563f687865dbc</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Vercel">
+  <data key="d0">Vercel</data>
+  <data key="d1">organization</data>
+  <data key="d2">Vercel is a cloud platform specializing in deploying web applications and providing tools for frontend development.</data>
+  <data key="d3">chunk-6f05ecbecfa5885e224563f687865dbc</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="GitHub">
+  <data key="d0">GitHub</data>
+  <data key="d1">organization</data>
+  <data key="d2">GitHub is a platform for version control and collaboration on software projects, hosting code repositories and facilitating teamwork.</data>
+  <data key="d3">chunk-6f05ecbecfa5885e224563f687865dbc</data>
+  <data key="d4">unknown_source</data>
+</node>
+</graph></graphml>

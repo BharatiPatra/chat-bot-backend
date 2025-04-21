@@ -1,0 +1,24 @@
+Q: Where can we find relevant public APIs and sample job listings data?
+A: You can find relevant open source public apis on the internet. You can also use herkey jobs
+listings data as well as many other data available on the internet like Linkedin Jobs, Naukri
+Jobs, Kaggle, data.gov.in, women in tech, women who code platforms and any other relevant
+career and jobs websites.
+Q: What specific career websites should we use for job data, and will HerKey provide a job
+openings list?
+A: Herkey won’t explicitly provide any data. However you can use the data from herkey.com
+website.
+Q: Which platform should we use to deploy the bot, and what are the recommended tech
+stacks?
+A: Option a). You can choose the platform of your choice during the development phase. Some
+of the recommended ones are vercel.com, github or any other cloud platform like AWS, Azure,
+GCP with free tier options
+Option b) Recommended tech stack - you are free to choose your tech stack. However, here are
+some guidelines we suggest. Python - FastAPI or Django or Flask Pytorch, Tensorflow libraries
+and the models to be supported and hosted on AWS Bedrock or any chatbot frameworks
+Frontend App - React or any other UI framework Database - mysql or mongodb or any other
+equivalent database.
+Q: Are we required to track user-level conversation history & for how long?
+A: Yes. User level conversation history is one of the primary data used for answering
+contextually. Preferably advised to store 100% history anonymized. We shouldn’t be storing
+user specific details. However, the details captured should be used for training the model
+purposes.
