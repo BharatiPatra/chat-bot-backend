@@ -1,0 +1,223 @@
+[
+    {
+        "job_id": "173777",
+        "job_title": "frontend developer",
+        "company": "techsynergy",
+        "location": "bangalore",
+        "work_mode": "hybrid",
+        "experience_range_start": "1",
+        "experience_range_end": "3",
+        "skills": [
+            "react",
+            "typescript",
+            "tailwind css"
+        ],
+        "salary_range_start": "6",
+        "salary_range_end": "12",
+        "industry": [
+            "technology",
+            "e-commerce"
+        ],
+        "job_description": "techsynergy is hiring a frontend developer proficient in react and typescript. you will work closely with ui/ux designers to bring beautiful, responsive interfaces to life.",
+        "job_url": "https://www.techsynergy.com/jobs/173777"
+    },
+    {
+        "job_id": "173778",
+        "job_title": "backend developer",
+        "company": "dataflux",
+        "location": "noida",
+        "work_mode": "onsite",
+        "experience_range_start": "3",
+        "experience_range_end": "6",
+        "skills": [
+            "node.js",
+            "express",
+            "mongodb"
+        ],
+        "salary_range_start": "8",
+        "salary_range_end": "15",
+        "industry": [
+            "analytics",
+            "technology"
+        ],
+        "job_description": "looking for a backend developer with expertise in node.js and mongodb to build scalable apis and services. strong knowledge of data modeling is a plus.",
+        "job_url": "https://www.dataflux.io/jobs/173778"
+    },
+    {
+        "job_id": "173779",
+        "job_title": "fullstack engineer",
+        "company": "cloudhub",
+        "location": "mumbai",
+        "work_mode": "remote",
+        "experience_range_start": "2",
+        "experience_range_end": "4",
+        "skills": [
+            "javascript",
+            "react",
+            "node.js"
+        ],
+        "salary_range_start": "10",
+        "salary_range_end": "18",
+        "industry": [
+            "cloud",
+            "saas"
+        ],
+        "job_description": "we are hiring a fullstack engineer comfortable with both frontend and backend development. react and node.js experience required. remote work flexibility.",
+        "job_url": "https://www.cloudhub.com/jobs/173779"
+    },
+    {
+        "job_id": "173780",
+        "job_title": "data engineer",
+        "company": "quantizen",
+        "location": "gurgaon",
+        "work_mode": "onsite",
+        "experience_range_start": "4",
+        "experience_range_end": "7",
+        "skills": [
+            "python",
+            "spark",
+            "airflow"
+        ],
+        "salary_range_start": "12",
+        "salary_range_end": "22",
+        "industry": [
+            "finance",
+            "data analytics"
+        ],
+        "job_description": "quantizen is seeking a data engineer to manage etl pipelines and data warehousing. proficiency with python and spark is essential.",
+        "job_url": "https://www.quantizen.io/jobs/173780"
+    },
+    {
+        "job_id": "173781",
+        "job_title": "devops engineer",
+        "company": "zenops",
+        "location": "chennai",
+        "work_mode": "remote",
+        "experience_range_start": "3",
+        "experience_range_end": "5",
+        "skills": [
+            "aws",
+            "docker",
+            "kubernetes"
+        ],
+        "salary_range_start": "11",
+        "salary_range_end": "19",
+        "industry": [
+            "devops",
+            "cloud"
+        ],
+        "job_description": "zenops is looking for a devops engineer with hands-on experience in aws, docker, and kubernetes. you’ll help automate and optimize development processes.",
+        "job_url": "https://www.zenops.dev/jobs/173781"
+    },
+    {
+        "job_id": "173782",
+        "job_title": "qa automation engineer",
+        "company": "testcraft",
+        "location": "pune",
+        "work_mode": "hybrid",
+        "experience_range_start": "2",
+        "experience_range_end": "4",
+        "skills": [
+            "selenium",
+            "java",
+            "testng"
+        ],
+        "salary_range_start": "7",
+        "salary_range_end": "13",
+        "industry": [
+            "software testing",
+            "technology"
+        ],
+        "job_description": "testcraft is hiring a qa automation engineer with strong knowledge of selenium and java. you will design and maintain automated test suites.",
+        "job_url": "https://www.testcraft.in/jobs/173782"
+    },
+    {
+        "job_id": "173783",
+        "job_title": "machine learning engineer",
+        "company": "brainlytics",
+        "location": "hyderabad",
+        "work_mode": "onsite",
+        "experience_range_start": "3",
+        "experience_range_end": "6",
+        "skills": [
+            "python",
+            "tensorflow",
+            "scikit-learn"
+        ],
+        "salary_range_start": "12",
+        "salary_range_end": "20",
+        "industry": [
+            "ai",
+            "healthcare"
+        ],
+        "job_description": "brainlytics is searching for a machine learning engineer to develop ai models in the healthcare space. strong foundations in python and ml libraries are required.",
+        "job_url": "https://www.brainlytics.ai/jobs/173783"
+    },
+    {
+        "job_id": "173784",
+        "job_title": "android developer",
+        "company": "mobikraft",
+        "location": "kochi",
+        "work_mode": "remote",
+        "experience_range_start": "2",
+        "experience_range_end": "4",
+        "skills": [
+            "kotlin",
+            "android sdk",
+            "mvvm"
+        ],
+        "salary_range_start": "8",
+        "salary_range_end": "14",
+        "industry": [
+            "mobile",
+            "entertainment"
+        ],
+        "job_description": "mobikraft is hiring an android developer to build and maintain mobile applications using kotlin and modern architecture patterns.",
+        "job_url": "https://www.mobikraft.com/jobs/173784"
+    },
+    {
+        "job_id": "173785",
+        "job_title": "product manager",
+        "company": "visionaryapps",
+        "location": "delhi",
+        "work_mode": "hybrid",
+        "experience_range_start": "5",
+        "experience_range_end": "8",
+        "skills": [
+            "agile",
+            "scrum",
+            "product strategy"
+        ],
+        "salary_range_start": "15",
+        "salary_range_end": "25",
+        "industry": [
+            "product",
+            "technology"
+        ],
+        "job_description": "visionaryapps is seeking a product manager with experience in agile teams and strong product strategy skills. you will lead cross-functional teams to deliver user-centric solutions.",
+        "job_url": "https://www.visionaryapps.com/jobs/173785"
+    },
+    {
+        "job_id": "173786",
+        "job_title": "cybersecurity analyst",
+        "company": "secura",
+        "location": "kolkata",
+        "work_mode": "onsite",
+        "experience_range_start": "3",
+        "experience_range_end": "6",
+        "skills": [
+            "network security",
+            "siem",
+            "threat analysis"
+        ],
+        "salary_range_start": "10",
+        "salary_range_end": "18",
+        "industry": [
+            "security",
+            "banking",
+            "finance"
+        ],
+        "job_description": "secura is hiring a cybersecurity analyst to manage threat detection and incident response. expertise in siem tools and network protocols is required.",
+        "job_url": "https://www.secura.in/jobs/173786"
+    }
+]

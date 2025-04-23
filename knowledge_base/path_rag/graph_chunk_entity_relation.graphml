@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d5" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="directed"><node id="&quot;PRODUCT MANAGER&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Product Manager is a role requiring experience in agile teams and strong product strategy skills to deliver user-centric solutions."</data>
+  <data key="d2">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+</node>
+<node id="&quot;GURGAON&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Gurgaon is the location for the data engineer job opening."</data>
+  <data key="d2">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+</node>
+<node id="&quot;TECHSYNERGY&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Techsynergy is a company hiring for a frontend developer position in Bangalore, with a hybrid work mode."</data>
+  <data key="d2">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+</node>
+<node id="&quot;CLOUDHUB&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Cloudhub is a company hiring for a fullstack engineer position in Mumbai, with a remote work mode."</data>
+  <data key="d2">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+</node>
+<node id="&quot;MACHINE LEARNING ENGINEER&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Machine Learning Engineer is a role requiring strong foundations in Python and ML libraries to develop AI models in healthcare."</data>
+  <data key="d2">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+</node>
+<node id="&quot;SECURA&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Secura is hiring a Cybersecurity Analyst to manage threat detection and incident response, requiring expertise in SIEM tools and network protocols."</data>
+  <data key="d2">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+</node>
+<node id="&quot;ZENOPS&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Zenops is a company hiring for a devops engineer position in Chennai, with a remote work mode."</data>
+  <data key="d2">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+</node>
+<node id="&quot;FRONTEND DEVELOPER&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Frontend developer is a job role requiring proficiency in React and TypeScript, working closely with UI/UX designers."</data>
+  <data key="d2">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+</node>
+<node id="&quot;FULLSTACK ENGINEER&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Fullstack engineer is a job role requiring comfort with both frontend and backend development, with experience in React and Node.js."</data>
+  <data key="d2">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+</node>
+<node id="&quot;ANDROID DEVELOPER&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Android Developer is a role requiring expertise in Kotlin, Android SDK, and MVVM to build and maintain mobile applications."</data>
+  <data key="d2">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+</node>
+<node id="&quot;CYBERSECURITY ANALYST&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Cybersecurity Analyst is a role requiring expertise in network security, SIEM, and threat analysis to manage threat detection and incident response."</data>
+  <data key="d2">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+</node>
+<node id="&quot;DEVOPS ENGINEER&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Devops engineer is a job role requiring hands-on experience in AWS, Docker, and Kubernetes, automating and optimizing development processes."</data>
+  <data key="d2">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+</node>
+<node id="&quot;BANGALORE&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Bangalore is the location for the frontend developer job opening."</data>
+  <data key="d2">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+</node>
+<node id="&quot;MUMBAI&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Mumbai is the location for the fullstack engineer job opening."</data>
+  <data key="d2">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+</node>
+<node id="&quot;KOCHI&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Kochi is a location where Mobikraft is hiring an Android developer."</data>
+  <data key="d2">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+</node>
+<node id="&quot;DATAFLUX&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Dataflux is a company hiring for a backend developer position in Noida, with an onsite work mode."</data>
+  <data key="d2">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+</node>
+<node id="&quot;QUANTIZEN&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Quantizen is a company hiring for a data engineer position in Gurgaon, with an onsite work mode."</data>
+  <data key="d2">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+</node>
+<node id="&quot;BRAINLYTICS&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Brainlytics is a company seeking a machine learning engineer specializing in AI models for healthcare."</data>
+  <data key="d2">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+</node>
+<node id="&quot;DELHI&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Delhi is a location where Visionaryapps is hiring a Product Manager."</data>
+  <data key="d2">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+</node>
+<node id="&quot;BACKEND DEVELOPER&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Backend developer is a job role requiring expertise in Node.js and MongoDB, building scalable APIs and services."</data>
+  <data key="d2">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+</node>
+<node id="&quot;DATA ENGINEER&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Data engineer is a job role requiring proficiency in Python and Spark, managing ETL pipelines and data warehousing."</data>
+  <data key="d2">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+</node>
+<node id="&quot;VISIONARYAPPS&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Visionaryapps is seeking a Product Manager with experience in agile teams and strong product strategy skills to lead cross-functional teams."</data>
+  <data key="d2">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+</node>
+<node id="&quot;KOLKATA&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Kolkata is a location where Secura is hiring a Cybersecurity Analyst."</data>
+  <data key="d2">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+</node>
+<node id="&quot;NOIDA&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Noida is the location for the backend developer job opening."</data>
+  <data key="d2">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+</node>
+<node id="&quot;MOBIKRAFT&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Mobikraft is a company hiring an Android developer to build and maintain mobile applications using Kotlin and modern architecture patterns."</data>
+  <data key="d2">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+</node>
+<edge source="&quot;BRAINLYTICS&quot;" target="&quot;MACHINE LEARNING ENGINEER&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Brainlytics is hiring a Machine Learning Engineer to work on AI models in healthcare."</data>
+  <data key="d5">"job hiring, skill requirement"</data>
+  <data key="d6">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+</edge>
+<edge source="&quot;MOBIKRAFT&quot;" target="&quot;ANDROID DEVELOPER&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Mobikraft is hiring an Android Developer to build and maintain mobile applications."</data>
+  <data key="d5">"job hiring, skill requirement"</data>
+  <data key="d6">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+</edge>
+</graph></graphml>

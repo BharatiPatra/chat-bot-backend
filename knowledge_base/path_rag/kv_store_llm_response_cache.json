@@ -1,0 +1,28 @@
+{
+  "hybrid": {
+    "2ab3829458690cba7852342ddbdc71a0": {
+      "return": "Based on the provided data, there are job openings related to data science, but not explicitly labeled as \"data science\" roles.\n\n**Data Engineer Positions:**\n\nThe data shows job openings for data engineers at Quantizen in Gurgaon and Dataflux in Noida.  These roles require proficiency in Python and Spark, and involve managing ETL pipelines and data warehousing.  The data does not specify the exact location or salary range for these positions.\n\n**Other Related Roles:**\n\nThere are also roles that may be of interest to data science professionals, such as Backend Developers.  The Backend Developer position at Dataflux in Noida requires expertise in Node.js and MongoDB, focusing on building scalable APIs and services.  Again, the data does not provide specific salary ranges or detailed job descriptions for these roles.\n\n**Important Considerations:**\n\nThe provided data does not contain a comprehensive list of all job openings.  There may be other data science-related roles not included in this dataset.  To get a complete picture of available data science positions, it would be necessary to consult additional job boards or company websites.  The data also lacks salary ranges for the listed positions, which is a crucial factor in job consideration.\n",
+      "embedding": null,
+      "embedding_shape": null,
+      "embedding_min": null,
+      "embedding_max": null,
+      "original_prompt": "System: You are a helpful assistant. Use the following conversation history to answer the query.\nHuman: Conversation Summary: \nHuman: Is there any job openings in data science?"
+    },
+    "5ad16eb238549990ec2427c68e4a2163": {
+      "return": "Based on the provided data, there is a job opening for a QA Automation Engineer at Testcraft, requiring Java expertise.\n\nThe job description for the QA Automation Engineer position at Testcraft mentions the need for strong knowledge of Selenium and Java.  This suggests a Java-related role within the software testing domain.  While other job listings exist in the data, they do not explicitly mention Java as a required skill.\n",
+      "embedding": null,
+      "embedding_shape": null,
+      "embedding_min": null,
+      "embedding_max": null,
+      "original_prompt": "System: You are a helpful assistant. Use the following conversation history to answer the query.\nHuman: Conversation Summary: \nHuman: Is there any job openings in java?"
+    },
+    "46342eeb6b022a0bc2049d1baf59ed6a": {
+      "return": "Job Openings in Java\n\nBased on the provided data, there is one job opening listed that mentions Java as a required skill.  This is for a QA Automation Engineer position at Testcraft, located in Pune.  The job description indicates that strong knowledge of Selenium and Java is essential for this role.  The required skills also include TestNG.\n\nOther job listings do not explicitly mention Java as a required skill.  While some listings may use Java indirectly, the provided data does not contain enough information to definitively state whether or not other positions require Java.\n",
+      "embedding": null,
+      "embedding_shape": null,
+      "embedding_min": null,
+      "embedding_max": null,
+      "original_prompt": "Human: Conversation Summary: \nHuman: Is there any job openings in java?"
+    }
+  }
+}

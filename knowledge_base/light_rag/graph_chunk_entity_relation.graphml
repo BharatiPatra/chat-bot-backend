@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="techsynergy">
+  <data key="d0">techsynergy</data>
+  <data key="d1">organization</data>
+  <data key="d2">Techsynergy is a technology and e-commerce company hiring a frontend developer.</data>
+  <data key="d3">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="frontend developer">
+  <data key="d0">frontend developer</data>
+  <data key="d1">category</data>
+  <data key="d2">Frontend developer role requiring React, TypeScript, and Tailwind CSS skills.</data>
+  <data key="d3">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Bangalore">
+  <data key="d0">Bangalore</data>
+  <data key="d1">geo</data>
+  <data key="d2">Bangalore is the location for the frontend developer job.</data>
+  <data key="d3">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="dataflux">
+  <data key="d0">dataflux</data>
+  <data key="d1">organization</data>
+  <data key="d2">Dataflux is an analytics and technology company hiring a backend developer.</data>
+  <data key="d3">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="backend developer">
+  <data key="d0">backend developer</data>
+  <data key="d1">category</data>
+  <data key="d2">Backend developer role requiring Node.js, Express, and MongoDB skills.</data>
+  <data key="d3">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Noida">
+  <data key="d0">Noida</data>
+  <data key="d1">geo</data>
+  <data key="d2">Noida is the location for the backend developer job.</data>
+  <data key="d3">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="cloudhub">
+  <data key="d0">cloudhub</data>
+  <data key="d1">organization</data>
+  <data key="d2">Cloudhub is a cloud and SaaS company hiring a fullstack engineer.</data>
+  <data key="d3">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="fullstack engineer">
+  <data key="d0">fullstack engineer</data>
+  <data key="d1">category</data>
+  <data key="d2">Fullstack engineer role requiring Javascript, React, and Node.js skills.</data>
+  <data key="d3">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Mumbai">
+  <data key="d0">Mumbai</data>
+  <data key="d1">geo</data>
+  <data key="d2">Mumbai is the location for the fullstack engineer job.</data>
+  <data key="d3">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="quantizen">
+  <data key="d0">quantizen</data>
+  <data key="d1">organization</data>
+  <data key="d2">Quantizen is a finance and data analytics company hiring a data engineer.</data>
+  <data key="d3">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="data engineer">
+  <data key="d0">data engineer</data>
+  <data key="d1">category</data>
+  <data key="d2">Data engineer role requiring Python, Spark, and Airflow skills.</data>
+  <data key="d3">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Gurgaon">
+  <data key="d0">Gurgaon</data>
+  <data key="d1">geo</data>
+  <data key="d2">Gurgaon is the location for the data engineer job.</data>
+  <data key="d3">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="zenops">
+  <data key="d0">zenops</data>
+  <data key="d1">organization</data>
+  <data key="d2">Zenops is a DevOps and cloud company hiring a DevOps engineer.</data>
+  <data key="d3">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="devops engineer">
+  <data key="d0">devops engineer</data>
+  <data key="d1">category</data>
+  <data key="d2">DevOps engineer role requiring AWS, Docker, and Kubernetes skills.</data>
+  <data key="d3">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Chennai">
+  <data key="d0">Chennai</data>
+  <data key="d1">geo</data>
+  <data key="d2">Chennai is the location for the DevOps engineer job.</data>
+  <data key="d3">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="testcraft">
+  <data key="d0">testcraft</data>
+  <data key="d1">organization</data>
+  <data key="d2">Testcraft is a software testing and technology company hiring a QA automation engineer.</data>
+  <data key="d3">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="qa automation engineer">
+  <data key="d0">qa automation engineer</data>
+  <data key="d1">category</data>
+  <data key="d2">QA automation engineer role requiring Selenium, Java, and TestNG skills.</data>
+  <data key="d3">chunk-3c7e2ec19b90107f3adb3e965cc99d9d</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="brainlytics">
+  <data key="d0">brainlytics</data>
+  <data key="d1">organization</data>
+  <data key="d2">Brainlytics is a company seeking a machine learning engineer focused on AI models in healthcare.</data>
+  <data key="d3">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Machine Learning Engineer">
+  <data key="d0">Machine Learning Engineer</data>
+  <data key="d1">person</data>
+  <data key="d2">A Machine Learning Engineer at Brainlytics will develop AI models in the healthcare industry, requiring strong Python and ML library skills.</data>
+  <data key="d3">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Python">
+  <data key="d0">Python</data>
+  <data key="d1">category</data>
+  <data key="d2">Python is a programming language required for the Machine Learning Engineer position at Brainlytics.</data>
+  <data key="d3">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="TensorFlow">
+  <data key="d0">TensorFlow</data>
+  <data key="d1">category</data>
+  <data key="d2">TensorFlow is a machine learning library required for the Machine Learning Engineer position at Brainlytics.</data>
+  <data key="d3">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Scikit-learn">
+  <data key="d0">Scikit-learn</data>
+  <data key="d1">category</data>
+  <data key="d2">Scikit-learn is a machine learning library required for the Machine Learning Engineer position at Brainlytics.</data>
+  <data key="d3">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="AI">
+  <data key="d0">AI</data>
+  <data key="d1">category</data>
+  <data key="d2">AI is a field of study and application relevant to the Machine Learning Engineer position at Brainlytics.</data>
+  <data key="d3">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Healthcare">
+  <data key="d0">Healthcare</data>
+  <data key="d1">category</data>
+  <data key="d2">Healthcare is an industry focus for the Machine Learning Engineer position at Brainlytics.</data>
+  <data key="d3">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Mobikraft">
+  <data key="d0">Mobikraft</data>
+  <data key="d1">organization</data>
+  <data key="d2">Mobikraft is a company hiring an Android Developer for mobile application development.</data>
+  <data key="d3">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Android Developer">
+  <data key="d0">Android Developer</data>
+  <data key="d1">person</data>
+  <data key="d2">An Android Developer at Mobikraft will build and maintain mobile applications using Kotlin and modern architecture patterns.</data>
+  <data key="d3">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Kotlin">
+  <data key="d0">Kotlin</data>
+  <data key="d1">category</data>
+  <data key="d2">Kotlin is a programming language used for Android development at Mobikraft.</data>
+  <data key="d3">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Android SDK">
+  <data key="d0">Android SDK</data>
+  <data key="d1">category</data>
+  <data key="d2">Android SDK is a software development kit for building Android applications.</data>
+  <data key="d3">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="MVVM">
+  <data key="d0">MVVM</data>
+  <data key="d1">category</data>
+  <data key="d2">MVVM is a software design pattern used in Android development.</data>
+  <data key="d3">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Mobile">
+  <data key="d0">Mobile</data>
+  <data key="d1">category</data>
+  <data key="d2">Mobile is an industry focus for the Android Developer position at Mobikraft.</data>
+  <data key="d3">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Entertainment">
+  <data key="d0">Entertainment</data>
+  <data key="d1">category</data>
+  <data key="d2">Entertainment is an industry focus for the Android Developer position at Mobikraft.</data>
+  <data key="d3">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Visionaryapps">
+  <data key="d0">Visionaryapps</data>
+  <data key="d1">organization</data>
+  <data key="d2">Visionaryapps is a company seeking a Product Manager with experience in agile teams and strong product strategy skills.</data>
+  <data key="d3">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+  <data key="d4">unknown_source</data>
+</node>
+<node id="Brainlytics">
+  <data key="d0">Brainlytics</data>
+  <data key="d1">organization</data>
+  <data key="d2">Brainlytics is a company seeking a machine learning engineer focused on AI models in healthcare.</data>
+  <data key="d3">chunk-9fce9f4ee6069812cf94b084eeb9e996</data>
+  <data key="d4">unknown_source</data>
+</node>
+</graph></graphml>
